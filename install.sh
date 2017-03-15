@@ -1,12 +1,10 @@
 #!/bin/sh
 
-# super
-sudo -v
-
-# Link repo files to ~
-echo "Linking config files to $HOME"
+# Link it up
+echo "Soft linking configuration files to $HOME"
 ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
+ln -sf $PWD/.zshrc $HOME/.zshrc
 
 # Reload zsh
 echo "Refreshing zsh"
-source ~/.zshrc
+source $HOME/.zshrc

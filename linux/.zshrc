@@ -1,7 +1,9 @@
-export ZSH=/home/timdouglas/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 export NODE_ENV="development"
+ZSH_THEME="hovercastle"
 
-ZSH_THEME="robbyrussell"
+plugins=(git zsh-syntax-highlighting)
 
 # general
 alias ls='ls -Gph'
@@ -11,3 +13,5 @@ alias cd..='cd ..'
 
 # npm
 alias check="npm-check"
+
+source $ZSH/oh-my-zsh.sh

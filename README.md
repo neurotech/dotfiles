@@ -1,6 +1,14 @@
 # dotfiles
 
+## macOS
+
+## Linux
+
+* i3
+* urxvt
+
+## Raspberry Pi
+
 ## TODO
 
- - Install script
- - [https://dotfiles.github.io/](https://dotfiles.github.io/)
+* `install.sh`

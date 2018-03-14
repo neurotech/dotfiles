@@ -1,3 +1,4 @@
+! Fonts
 Xft.dpi: 96
 Xft.antialias: 1
 Xft.rgba: rgb
@@ -6,47 +7,72 @@ Xft.lcdfilter: lcddefault
 Xft.hinting: 1
 Xft.hintstyle: hintfull
 
-URxvt.letterSpace: -2
+! URxvt
+URxvt.cursorUnderline: true
+URxvt.cursorBlink: 1
+URxvt.letterSpace: 0
+URxvt.scrollBar: false
+URxvt.externalBorder: 0
+URxvt.internalBorder: 20
 URxvt.font: xft:FiraMono:size=12:hintstyle=hintfull
 URxvt.boldFont: xft:FiraMono:size=12:hintstyle=hintfull
 URxvt.italicFont: xft:FiraMono:size=12:hintstyle=hintfull
 URxvt.boldItalicFont: xft:FiraMono:size=12:hintstyle=hintfull
 
-URxvt.scrollBar: false
-URxvt.internalBorder: 10
+! rofi
+rofi.font: FiraMono Regular 14
+rofi.terminal: urxvt
+rofi.ssh-client: ssh
 
-## THEME
+! Colours
+#define base00 #151718
+#define base01 #282a2b
+#define base02 #3b758c
+#define base03 #41535b
+#define base04 #43a5d5
+#define base05 #d6d6d6
+#define base06 #eeeeee
+#define base07 #ffffff
+#define base08 #cd3f45
+#define base09 #db7b55
+#define base0A #e6cd69
+#define base0B #9fca56
+#define base0C #55dbbe
+#define base0D #55b5db
+#define base0E #a074c4
+#define base0F #8a553f
 
-! █▓▒░ scorcerer colors
-*.foreground:   #c2c2b0
-*.background:   #222222
-*.cursorColor:  #c2c2b0
-! black
-*.color0:       #222222
-*.color8:       #272822
-! red
-*.color1:       #aa4450
-*.color9:       #ff6a6a
-! green
-*.color2:       #719611
-*.color10:      #b1d631
-! yellow
-!*.color3:      #cc8800
-*.color3:       #ff9800
-*.color11:      #87875f
-! blue
-*.color4:       #6688aa
-*.color12:      #90b0d1
-! magenta
-*.color5:       #8f6f8f
-*.color13:      #8181a6
-! cyan
-*.color6:       #528b8b
-*.color14:      #87ceeb
-! white
-*.color7:       #d3d3d3
-*.color15:      #c1cdc1
-! others
-URxvt.colorIT:  #719611
-URxvt.colorBD:  #d3d3d3
-URxvt.colorUL:  #528b8b
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*color16:      base09
+*color17:      base0F
+*color18:      base01
+*color19:      base02
+*color20:      base04
+*color21:      base06

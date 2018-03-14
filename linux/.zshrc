@@ -3,7 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export NODE_ENV="development"
 ZSH_THEME="hovercastle"
 
-plugins=(git zsh-syntax-highlighting)
+plugins=(git node npm zsh-syntax-highlighting)
 
 # general
 alias ls='ls -Gph'

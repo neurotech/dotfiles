@@ -24,3 +24,7 @@
 ## Wishlist
 
 * Blurred login/lock screen?
+
+---
+
+Thanks to [https://github.com/jibreil/dotfiles](https://github.com/jibreil/dotfiles/) for inspiration.

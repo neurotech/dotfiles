@@ -16,3 +16,4 @@
 ## TODO
 
 * `install.sh`
+* exec --no-startup-id feh --bg-fill /home/user/path/to/wallpapers/wallpaper.jpg

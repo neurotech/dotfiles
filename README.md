@@ -10,10 +10,17 @@
 * zsh
 * oh-my-zsh
 * zsh-syntax-highlighting
+* Dropbox?
 
 ## Raspberry Pi
 
 ## TODO
 
 * `install.sh`
-* exec --no-startup-id feh --bg-fill /home/user/path/to/wallpapers/wallpaper.jpg
+* Add i3 config, .Xresources
+* Holiday.jpg to repo?
+* add to i3: exec --no-startup-id feh --bg-fill /home/user/path/to/wallpapers/wallpaper.jpg
+
+## Wishlist
+
+* Blurred login/lock screen?

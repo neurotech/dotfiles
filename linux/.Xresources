@@ -11,6 +11,7 @@ Xft.lcdfilter: lcddefault
 URxvt.cursorUnderline: true
 URxvt.cursorBlink: 1
 URxvt.letterSpace: -2
+URxvt.lineSpace: 2
 URxvt.scrollBar: false
 URxvt.externalBorder: 0
 URxvt.internalBorder: 20

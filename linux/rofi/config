@@ -1,1 +1,1 @@
-include "/usr/share/rofi/themes//hovercastle.theme"
+#include "/usr/share/rofi/themes//hovercastle.theme"

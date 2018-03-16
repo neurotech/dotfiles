@@ -67,9 +67,6 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# focus the child container
-#bindsym $mod+d focus child
-
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -104,16 +101,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
@@ -127,17 +114,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#        status_command i3status
-#}
-
 ### THEME ###
 
 ### Borders ###
 new_window pixel 4
 new_float pixel 4
+for_window [class=".*"] border pixel 0
+for_window [class="URxvt"] border pixel 2
 
 # i3-gaps
 smart_gaps on
@@ -149,18 +132,12 @@ default_border          none
 default_floating_border none
 
 # hiding borders adjacent to the screen edges
-hide_edge_borders none
+hide_edge_borders smart
 
-# class                 border  backgr. text    indicator child_border
-#client.focused          #2B83A6 #2B83A6 #FFFFFF #DDDDDD   #2B83A6
-#client.focused_inactive #212121 #212121 #86888C #292D2E   #5A5A5A
-#client.unfocused        #212121 #212121 #86888C #292D2E   #5A5A5A
-#client.urgent           #D64E4E #D64E4E #FFFFFF #D64E4E   #D64E4E
-#client.placeholder      #212121 #0C0C0C #FFFFFF #212121   #262626
-#client.background       #212121
-
+# colours
 # class                 border    bg        text      indicator   child_border
-client.focused          #cd3f45   #0a0b10   #848474   #cd3f45     #cd3f45
+client.focused          #666699   #0a0b10   #848474   #666699     #666699
 client.focused_inactive #2c2e2f   #0a0b10   #848474   #2c2e2f     #2c2e2f
 client.unfocused        #2c2e2f   #0a0b10   #848474   #2c2e2f     #2c2e2f
 client.urgent           #e6cd69   #e6cd69   #ffffff   #e6cd69
+

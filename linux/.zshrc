@@ -11,8 +11,11 @@ alias grep='grep --color=auto'
 alias reload='source ~/.zshrc'
 alias cd..='cd ..'
 
+# apt
+alias agu='sudo apt-get update && sudo apt-get upgrade'
+
 # x
-alias relx='xrdb -merge $HOME/.Xresources && echo "Reloaded .Xresources"'
+alias relx='xrdb -merge $HOME/.Xresources && echo "Reloaded .Xresources!"'
 
 # npm
 alias check="npm-check"

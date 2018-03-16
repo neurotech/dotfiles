@@ -1,11 +1,11 @@
+# set mod
 set $mod Mod1
 
-## Startup
+# startup
 exec_always --no-startup-id feh --bg-fill $HOME/projects/dotfiles/wallpaper/holiday.jpg
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# window title font
 font pango:FiraMono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -21,25 +21,13 @@ bindsym $mod+Shift+q kill
 bindsym Control+Shift+space exec rofi -show window
 bindsym Control+space exec rofi -show run
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
+# adjust focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -93,8 +81,10 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -140,4 +130,3 @@ client.focused          #666699   #0a0b10   #848474   #666699     #666699
 client.focused_inactive #292a44   #0a0b10   #848474   #292a44     #292a44
 client.unfocused        #383a62   #0a0b10   #848474   #383a62     #383a62
 client.urgent           #ff79c6   #ff79c6   #ffffff   #ff79c6
-

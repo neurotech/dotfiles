@@ -4,6 +4,8 @@ set $mod Mod1
 # startup
 exec_always --no-startup-id feh --bg-fill $HOME/projects/dotfiles/wallpaper/holiday.jpg
 exec_always --no-startup-id xrdb -load ~/.Xresources
+exec_always --no-startup-id killall lemonbar
+exec_always --no-startup-id bash $HOME/.config/lemonbar/bar.sh | /usr/bin/lemonbar -p -u 2 -U "#292a44" -B "#383a62" -F "#f1eff8" -f "Fira Mono"-10 &
 
 # window title font
 font pango:FiraMono 10

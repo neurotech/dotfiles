@@ -137,7 +137,7 @@ hide_edge_borders smart
 # colours
 # class                 border    bg        text      indicator   child_border
 client.focused          #666699   #0a0b10   #848474   #666699     #666699
-client.focused_inactive #2c2e2f   #0a0b10   #848474   #2c2e2f     #2c2e2f
-client.unfocused        #2c2e2f   #0a0b10   #848474   #2c2e2f     #2c2e2f
-client.urgent           #e6cd69   #e6cd69   #ffffff   #e6cd69
+client.focused_inactive #292a44   #0a0b10   #848474   #292a44     #292a44
+client.unfocused        #292a44   #0a0b10   #848474   #292a44     #292a44
+client.urgent           #ff79c6   #ff79c6   #ffffff   #ff79c6
 

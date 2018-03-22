@@ -116,7 +116,7 @@ for_window [class="URxvt"] border pixel 2
 
 # i3-gaps
 smart_gaps on
-gaps inner 8
+gaps inner 4
 gaps outer 0
 
 # window border settings

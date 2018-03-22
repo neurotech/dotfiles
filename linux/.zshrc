@@ -20,11 +20,18 @@ alias relx='xrdb -merge $HOME/.Xresources && echo "Reloaded .Xresources!"'
 # npm
 alias check="npm-check"
 
+# redis
+alias rs="redis-server"
+
+# oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# nougat
+export NOUGAT_SCREENSHOT_DIRECTORY="$HOME/screenshots"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

@@ -1,29 +1,20 @@
 # dotfiles
 
-## macOS
+## Windows
 
-## Linux
+### Work
 
-* i3
-* i3-gaps
-* urxvt
-* zsh
-* oh-my-zsh
-* zsh-syntax-highlighting
-* Dropbox?
+#### General Checklist
 
-## Raspberry Pi
+- Install font: [Fira Code](https://github.com/tonsky/FiraCode)
 
-## TODO
+#### VS Code
 
-* `install.sh`
-* Add i3 config, .Xresources
-* Holiday.jpg to repo?
-* add to i3: exec --no-startup-id feh --bg-fill /home/user/path/to/wallpapers/wallpaper.jpg
+`settings.json` → `C:\Users\$USERNAME\AppData\Roaming\Code\User\settings.json`
 
-## Wishlist
+##### Checklist
 
-* Blurred login/lock screen?
+- Install extension *"Bearded Theme"*
 
 ---
 

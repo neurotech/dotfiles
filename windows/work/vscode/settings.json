@@ -1,0 +1,57 @@
+{
+  "workbench.colorTheme": "BeardedTheme Vivid",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code Regular",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.cursorBlinking": "smooth",
+  "editor.lineHeight": 30,
+  "[javascript]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "scm.diffDecorations": "all",
+  "terminal.integrated.fontFamily": "Fira Code Medium",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "window.zoomLevel": 0,
+  "editor.minimap.enabled": false,
+  "npm.enableScriptExplorer": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 14,
+  "workbench.colorCustomizations": {
+      "terminal.ansiBlack": "#6D6DB5",
+      "terminal.ansiBlue": "#7AA5FF",
+      "terminal.ansiCyan": "#66D9EF",
+      "terminal.ansiGreen": "#2DE0A7",
+      "terminal.ansiMagenta": "#AE81FF",
+      "terminal.ansiRed": "#F92672",
+      "terminal.ansiYellow": "#FFDB7D",
+      "terminal.ansiWhite": "#FFFFFF",
+      "terminal.ansiBrightBlack": "#6D6DB5",
+      "terminal.ansiBrightBlue": "#7AA5FF",
+      "terminal.ansiBrightCyan": "#66D9EF",
+      "terminal.ansiBrightGreen": "#2DE0A7",
+      "terminal.ansiBrightMagenta": "#AE81FF",
+      "terminal.ansiBrightRed": "#F92672",
+      "terminal.ansiBrightWhite": "#FFFFFF",
+      "terminal.ansiBrightYellow": "#FFDB7D",
+      "terminalCursor.foreground": "#FFFFFF"
+  },
+  "terminal.integrated.lineHeight": 1.3,
+  "breadcrumbs.enabled": true,
+  "git.autofetch": true,
+  "window.titleBarStyle": "custom",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.wordWrapColumn": 120,
+  "git.confirmSync": false,
+  "powermode.enabled": true,
+  "powermode.presets": "fireworks",
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

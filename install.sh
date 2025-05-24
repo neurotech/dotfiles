@@ -1,4 +1,4 @@
-#!/home/linuxbrew/.linuxbrew/bin/fish
+#!/bin/sh
 
 # Link fish config
 if [ ! -f "$HOME/.config/fish/config.fish" ]; then
@@ -28,9 +28,10 @@ else
 fi
 
 # Link fish functions (fish_prompt)
-if [ ! -f "$HOME/.config/fish/functions/fish_prompt.fish" ]; then
-  echo "Linking fish prompt function to $HOME/.config/fish/functions/fish_prompt.fish..."
-  ln -sf $PWD/fish/functions/fish_prompt.fish $HOME/.config/fish/functions/fish_prompt.fish
+if [ ! -f "$HOME/.config/fish/functions/fish_prompt).fish" ]; then
+  echo "Linking fish functions (fish_prompt)) to $HOME/.config/fish/functions/fish_prompt).fish..."
+  mkdir -p $HOME/.config/fish/functions
+  ln -sf $PWD/fish/functions/fish_prompt).fish $HOME/.config/fish/functions/fish_prompt).fish
 else
-  echo "Fish prompt function already linked."
+  echo "Fish functions (fish_prompt)) already linked."
 fi

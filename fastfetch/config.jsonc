@@ -15,7 +15,7 @@
   "modules": [
     "break",
     {
-      "type": "host",
+      "type": "title",
       "key": " ",
       "keyColor": "cyan"
     },

@@ -1,5 +1,7 @@
 #!/home/linuxbrew/.linuxbrew/bin/fish
 
+touch $HOME/.hushlogin
+
 # Link fish config
 if not test -f "$HOME/.config/fish/config.fish"
     echo "Linking fish config to $HOME/.config/fish/config.fish..."

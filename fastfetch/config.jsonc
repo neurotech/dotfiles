@@ -16,6 +16,7 @@
     "break",
     {
       "type": "title",
+      "format": "{2}",
       "key": " ",
       "keyColor": "cyan"
     },

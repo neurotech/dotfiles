@@ -5,100 +5,97 @@
     "height": 15,
     "width": 30,
     "padding": {
-      "top": 1
+      "top": 1,
+      "left": 1
     }
   },
   "display": {
-    "separator": " 󰑃  "
+    "separator": " ➜  "
   },
   "modules": [
     "break",
     {
       "type": "os",
       "key": " DISTRO",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
     },
     {
       "type": "kernel",
-      "key": "    ├ ",
-      "keyColor": "cyan"
+      "key": " ├  ",
+      "keyColor": "cyan",
     },
     {
       "type": "packages",
-      "key": "    ├ 󰏖",
-      "keyColor": "cyan"
+      "key": " ├ 󰏖 ",
+      "keyColor": "cyan",
     },
     {
       "type": "shell",
-      "key": "    └ ",
-      "keyColor": "cyan"
+      "key": " └  ",
+      "keyColor": "cyan",
     },
+    "break",
     {
       "type": "wm",
       "key": " DE/WM",
-      "keyColor": "blue"
+      "keyColor": "34",
     },
     {
       "type": "wmtheme",
-      "key": "    ├ 󰉼",
-      "keyColor": "blue"
-    },
-    {
-      "type": "icons",
-      "key": "    ├ 󰀻",
-      "keyColor": "blue"
-    },
-    {
-      "type": "terminalfont",
-      "key": "    ├ ",
-      "keyColor": "blue",
+      "key": " ├ 󰉼 ",
+      "keyColor": "34",
     },
     {
       "type": "terminal",
-      "key": "    └ ",
-      "keyColor": "blue"
+      "key": " ├  ",
+      "keyColor": "34",
     },
     {
+      "type": "terminalfont",
+      "key": " └  ",
+      "keyColor": "34",
+    },
+    "break",
+    {
       "type": "host",
+      "format": "{2}",
       "key": "󰌢 SYSTEM",
-      "keyColor": "magenta"
+      "keyColor": "magenta",
     },
     {
       "type": "cpu",
-      "key": "    ├ 󰻠",
-      "keyColor": "magenta"
+      "format": "{1} ({3}) @ {7} GHz",
+      "key": " ├  ",
+      "keyColor": "magenta",
     },
     {
       "type": "gpu",
-      "key": "    ├ 󰻑",
       "format": "{2}",
-      "keyColor": "magenta"
-    },
-    {
-      "type": "display",
-      "key": "    ├ 󰍹",
+      "key": " ├ 󰢮 ",
       "keyColor": "magenta",
-      "compactType": "original-with-refresh-rate"
     },
     {
       "type": "memory",
-      "key": "    ├ 󰾆",
-      "keyColor": "magenta"
+      "key": " ├  ",
+      "keyColor": "magenta",
     },
     {
       "type": "swap",
-      "key": "    ├ 󰓡",
-      "keyColor": "magenta"
+      "key": " ├ 󰓡 ",
+      "keyColor": "magenta",
     },
     {
-      "type": "uptime",
-      "key": "    └ 󰅐",
-      "keyColor": "magenta"
+      "type": "disk",
+      "key": " ├ 󰋊 ",
+      "keyColor": "magenta",
     },
     {
-      "type": "custom",
-      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m  \u001b[39m    \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m "
+      "type": "display",
+      "key": " └  ",
+      "compactType": "original-with-refresh-rate",
+      "keyColor": "magenta",
     },
-    "break"
+    "break",
+    "break",
   ]
 }

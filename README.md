@@ -116,6 +116,10 @@ echo >> $HOME/.bashrc && echo 'eval "$(starship init bash)"' >> $HOME/.bashrc
 
 TODO
 
+### GitHub
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux
+
 ### dotfiles
 
 ```shell

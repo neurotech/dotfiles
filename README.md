@@ -103,12 +103,18 @@ newgrp docker
 
 ### Homebrew packages
 
-`brew install uv node pnpm fish btop eza bat tldr`
+`brew install uv node pnpm fish btop eza bat tldr rust`
 
 Add the following to the end of `~/.bashrc`:
 
 ```shell
 echo /home/linuxbrew/.linuxbrew/bin/fish | sudo tee -a /etc/shells && chsh -s /home/linuxbrew/.linuxbrew/bin/fish
+```
+
+Install `pokeget`:
+
+```shell
+cargo install pokeget
 ```
 
 ### Pi-hole

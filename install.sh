@@ -1,5 +1,15 @@
 #!/home/linuxbrew/.linuxbrew/bin/fish
 
+# Link motd to /etc/update-motd.d
+if not test -f "/etc/update-motd.d/00-motd"
+    echo "Linking motd to /etc/update-motd.d/00-motd..."
+    sudo mkdir -p "/etc/update-motd.d"
+    sudo ln -sf "$PWD/motd.sh" "/etc/update-motd.d/00-motd"
+    sudo chmod +x "/etc/update-motd.d/00-motd"
+else
+    echo "Motd already linked."
+end
+
 # Link fish config
 if not test -f "$HOME/.config/fish/config.fish"
     echo "Linking fish config to $HOME/.config/fish/config.fish..."

@@ -16,3 +16,5 @@ end
 if [ -f $HOME/.config/fish/functions/main.fish ]
     source $HOME/.config/fish/functions/main.fish
 end
+
+set PATH "$PATH:$HOME/.cargo/bin"

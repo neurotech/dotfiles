@@ -100,7 +100,7 @@ newgrp docker
 
 ### Homebrew packages
 
-`brew install uv node pnpm fish btop eza bat tldr rust`
+`brew install uv node pnpm fish btop eza bat tldr rust fastfetch`
 
 Add the following to the end of `~/.bashrc`:
 

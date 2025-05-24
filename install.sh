@@ -37,3 +37,12 @@ if not test -f "$HOME/.config/fish/functions/fish_prompt.fish"
 else
     echo "Fish functions (fish_prompt) already linked."
 end
+
+# Link fastfetch config
+if not test -f "$HOME/.config/fastfetch/config.conf"
+    echo "Linking fastfetch config to $HOME/.config/fastfetch/config.conf..."
+    mkdir -p "$HOME/.config/fastfetch"
+    ln -sf "$PWD/fastfetch/config.conf" "$HOME/.config/fastfetch/config.conf"
+else
+    echo "Fastfetch config already linked."
+end

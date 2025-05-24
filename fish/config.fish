@@ -19,4 +19,4 @@ end
 
 set PATH "$PATH:$HOME/.cargo/bin"
 
-toilet -f pagga slab --filter crop:gay
+clear && pokeget random --hide-name >/tmp/pkmn.txt && fastfetch -c $HOME/.config/fastfetch/config.jsonc && printf '\n'

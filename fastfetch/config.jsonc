@@ -9,9 +9,7 @@
       "left": 1
     }
   },
-  "display": {
-    "separator": " ➜  "
-  },
+  "display": {},
   "modules": [
     "break",
     {

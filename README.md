@@ -31,6 +31,11 @@ network:
       routes:
         - to: default
           via: 192.168.1.1
+      access-points:
+        "NETWORK NAME":
+          auth:
+            key-management: "psk"
+            password: "PASSWORD"
 ```
 
 #### Ethernet:
@@ -96,24 +101,25 @@ sudo usermod -a -G docker $USER
 newgrp docker
 ```
 
-### Python, node, pnpm, starship
+### Python, node, pnpm, starship, btop
 
-`brew install uv node pnpm starship`
+`brew install uv node pnpm starship btop`
 
 Add the following to the end of `~/.bashrc`:
 
 ```shell
 eval "$(starship init bash)"
-
 echo >> $HOME/.bashrc && echo 'eval "$(starship init bash)"' >> $HOME/.bashrc
 ```
 
 ### Pi-hole
 
-### dotfiles
+TODO
 
+### dotfiles
 
 ```shell
 git clone https://github.com/neurotech/dotfiles
+cd dotfiles
 ./install.sh
 ```

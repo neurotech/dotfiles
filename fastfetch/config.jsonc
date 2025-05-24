@@ -9,7 +9,9 @@
       "left": 1
     }
   },
-  "display": {},
+  "display": {
+    "separator": " "
+  },
   "modules": [
     "break",
     {

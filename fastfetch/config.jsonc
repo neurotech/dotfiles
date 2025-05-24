@@ -16,40 +16,40 @@
     "break",
     {
       "type": "os",
-      "key": " DISTRO",
+      "key": " ",
       "keyColor": "cyan"
     },
     {
       "type": "kernel",
-      "key": " ├  ",
+      "key": " ",
       "keyColor": "cyan"
     },
     {
       "type": "shell",
-      "key": " └  ",
+      "key": " ",
       "keyColor": "cyan"
     },
     "break",
     {
       "type": "host",
       "format": "{5} {2}",
-      "key": "󰌢 SYSTEM",
+      "key": "󰌢 ",
       "keyColor": "magenta"
     },
     {
       "type": "cpu",
-      "format": "{1} ({3}) @ {7}",
-      "key": " ├  ",
+      "format": "{1} @ {7}",
+      "key": " ",
       "keyColor": "magenta"
     },
     {
       "type": "memory",
-      "key": " ├  ",
+      "key": " ",
       "keyColor": "magenta"
     },
     {
       "type": "disk",
-      "key": " └ 󰋊 ",
+      "key": "󰋊 ",
       "keyColor": "magenta"
     }
   ]

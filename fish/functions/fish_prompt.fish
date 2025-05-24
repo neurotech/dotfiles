@@ -1,7 +1,15 @@
-function fish_prompt -d "Write out the prompt"
-    # This shows up as USER@HOST /home/user/ >, with the directory colored
-    # $USER and $hostname are set by fish, so you can just use them
-    # instead of using `whoami` and `hostname`
-    printf '%s@%s %s%s%s > ' $USER $hostname \
-        (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+function fish_prompt --description 'Informative prompt'
+    set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
+
+    if functions -q fish_is_root_user; and fish_is_root_user
+        printf '%s@%s %s%s%s# ' $USER (prompt_hostname) (set -q fish_color_cwd_root and set_color $fish_color_cwd_root or set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+    else
+        set -l status_color (set_color $fish_color_status)
+        set -l statusb_color (set_color --bold $fish_color_status)
+        set -l pipestatus_string (__fish_print_pipestatus "[" "]" "|")
+
+        printf '[%s] %s%s@%s %s%s %s%s%s \n> ' (date "+%H:%M:%S") (set_color brblue) \
+            $USER (prompt_hostname) (set_color $fish_color_cwd) $PWD $pipestatus_string \
+            (set_color normal)
+    end
 end

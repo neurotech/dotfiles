@@ -101,15 +101,14 @@ sudo usermod -a -G docker $USER
 newgrp docker
 ```
 
-### Python, node, pnpm, starship, btop
+### Python, node, pnpm, fish, btop
 
-`brew install uv node pnpm starship btop`
+`brew install uv node pnpm fish btop`
 
 Add the following to the end of `~/.bashrc`:
 
 ```shell
-eval "$(starship init bash)"
-echo >> $HOME/.bashrc && echo 'eval "$(starship init bash)"' >> $HOME/.bashrc
+echo /home/linuxbrew/.linuxbrew/bin/fish | sudo tee -a /etc/shells && chsh -s /home/linuxbrew/.linuxbrew/bin/fish
 ```
 
 ### Pi-hole

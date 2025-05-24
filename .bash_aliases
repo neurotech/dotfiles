@@ -1,3 +1,6 @@
+# Shell
+alias ll='ls -alF'
+
 # Bash
 alias reload="source $HOME/.bashrc"
 

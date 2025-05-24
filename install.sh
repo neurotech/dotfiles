@@ -8,11 +8,11 @@ else
   echo "Bash aliases already linked."
 fi
 
-# Link Starship config
-if [ ! -f "$HOME/.config/starship.toml" ]; then
-  echo "Linking Starship config to $HOME/.config/starship.toml..."
-  mkdir -p $HOME/.config
-  ln -sf $PWD/starship/starship.toml $HOME/.config/starship.toml
+# Link fish config
+if [ ! -f "$HOME/.config/fish/config.fish" ]; then
+  echo "Linking fish config to $HOME/.config/fish/config.fish..."
+  mkdir -p $HOME/.config/fish
+  ln -sf $PWD/fish/config.fish $HOME/.config/fish/config.fish
 else
-  echo "Starship config already linked."
+  echo "Fish config already linked."
 fi

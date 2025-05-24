@@ -111,6 +111,18 @@ Add the following to the end of `~/.bashrc`:
 echo /home/linuxbrew/.linuxbrew/bin/fish | sudo tee -a /etc/shells && chsh -s /home/linuxbrew/.linuxbrew/bin/fish
 ```
 
+Install [fisher](https://github.com/jorgebucaran/fisher):
+
+```shell
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+
+Install [pure](https://github.com/pure-fish/pure)
+
+```shell
+fisher install pure-fish/pure
+```
+
 ### Pi-hole
 
 TODO

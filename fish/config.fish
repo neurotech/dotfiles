@@ -18,3 +18,5 @@ if [ -f $HOME/.config/fish/functions/main.fish ]
 end
 
 set PATH "$PATH:$HOME/.cargo/bin"
+
+toilet -f pagga slab --filter crop:gay

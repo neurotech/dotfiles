@@ -4,10 +4,30 @@ set fish_greeting ""
 # Setup brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# if [ -f ~/.bash_aliases ]; then
-#   . ~/.bash_aliases
-# fi
+# Clear line on Ctrl+c
+bind --preset \cC cancel-commandline
 
+# ls → eza
+if type -q eza
+    abbr --add -g ls 'eza --long --classify --all --header --git --no-user --tree --level 1'
+end
 
-# set brewcmd (path filter /opt/homebrew/bin/brew /usr/local/bin/brew)[1]
-# and $brewcmd shellenv | source
+# cat → bat
+if type -q bat
+    abbr --add -g cat bat
+end
+
+function reload
+    source $HOME/.config/fish/config.fish
+end
+
+function lightsoff
+    brightnessctl -d dell::kbd_backlight set 0
+    brightnessctl -d phy0-led set 0
+    brightnessctl -d platform::micmute set 0
+    brightnessctl -d intel_backlight set 0
+end
+
+function brightness
+    brightnessctl -d intel_backlight set $argv
+end

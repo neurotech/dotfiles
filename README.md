@@ -101,9 +101,9 @@ sudo usermod -a -G docker $USER
 newgrp docker
 ```
 
-### Python, node, pnpm, fish, btop
+### Homebrew packages
 
-`brew install uv node pnpm fish btop`
+`brew install uv node pnpm fish btop eza bat tldr`
 
 Add the following to the end of `~/.bashrc`:
 

@@ -50,11 +50,6 @@
       "key": " ├  ",
       "keyColor": "34",
     },
-    {
-      "type": "terminalfont",
-      "key": " └  ",
-      "keyColor": "34",
-    },
     "break",
     {
       "type": "host",

@@ -64,7 +64,7 @@
     },
     {
       "type": "cpu",
-      "format": "{1} ({3}) @ {7} GHz",
+      "format": "{1} ({3}) @ {7}",
       "key": " ├  ",
       "keyColor": "magenta",
     },
@@ -80,11 +80,6 @@
       "keyColor": "magenta",
     },
     {
-      "type": "swap",
-      "key": " ├ 󰓡 ",
-      "keyColor": "magenta",
-    },
-    {
       "type": "disk",
       "key": " ├ 󰋊 ",
       "keyColor": "magenta",
@@ -95,7 +90,6 @@
       "compactType": "original-with-refresh-rate",
       "keyColor": "magenta",
     },
-    "break",
     "break",
   ]
 }

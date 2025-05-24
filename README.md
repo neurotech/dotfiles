@@ -69,7 +69,7 @@ sudo dpkg-reconfigure tzdata
 ```shell
 sudo apt update
 sudo apt upgrade
-sudo apt install update-motd brightnessctl toilet
+sudo apt install update-motd brightnessctl
 ```
 
 ### Laptop Display Brightness

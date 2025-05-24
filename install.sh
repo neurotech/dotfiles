@@ -39,10 +39,10 @@ else
 end
 
 # Link fastfetch config
-if not test -f "$HOME/.config/fastfetch/config.conf"
-    echo "Linking fastfetch config to $HOME/.config/fastfetch/config.conf..."
+if not test -f "$HOME/.config/fastfetch/config.jsonc"
+    echo "Linking fastfetch config to $HOME/.config/fastfetch/config.jsonc..."
     mkdir -p "$HOME/.config/fastfetch"
-    ln -sf "$PWD/fastfetch/config.conf" "$HOME/.config/fastfetch/config.conf"
+    ln -sf "$PWD/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
 else
     echo "Fastfetch config already linked."
 end

@@ -66,16 +66,13 @@ sudo dpkg-reconfigure tzdata
 
 ### Prerequisites
 
-Update and upgrade existing packages:
-
 ```shell
 sudo apt update
 sudo apt upgrade
+sudo apt install update-motd brightnessctl
 ```
 
 ### Laptop Display Brightness
-
-`sudo apt install brightnessctl`
 
 Add yourself to the video and input groups (so as to not need to `sudo` before each call to `brightnessctl`)
 

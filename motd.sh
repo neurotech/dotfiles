@@ -1,2 +1,2 @@
 #!/bin/sh
-fastfetch --config paleofetch
+exec /home/linuxbrew/.linuxbrew/bin/fastfetch --config paleofetch

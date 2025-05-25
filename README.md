@@ -100,7 +100,7 @@ newgrp docker
 
 ### Homebrew packages
 
-`brew install uv node pnpm fish btop eza bat tldr rust fastfetch`
+`brew install uv node pnpm fish btop eza bat tldr rust fastfetch tmux tpm entr`
 
 Add the following to the end of `~/.bashrc`:
 
@@ -113,6 +113,8 @@ Install `pokeget`:
 ```shell
 cargo install pokeget
 ```
+
+Run `tmux` and then hit `` + I` to install the `tpm` plugins.
 
 ### Pi-hole
 

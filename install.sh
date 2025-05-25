@@ -46,3 +46,11 @@ if not test -f "$HOME/.config/fastfetch/config.jsonc"
 else
     echo "Fastfetch config already linked."
 end
+
+# Link tmux config
+if not test -f "$HOME/config./tmux/tmux.conf"
+    echo "Linking tmux config to $HOME/config./tmux/tmux.conf..."
+    ln -sf "$PWD/tmux/tmux.conf" "$HOME/config./tmux/tmux.conf"
+else
+    echo "Tmux config already linked."
+end

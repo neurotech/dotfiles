@@ -17,6 +17,9 @@ if [ -f $HOME/.config/fish/functions/main.fish ]
     source $HOME/.config/fish/functions/main.fish
 end
 
+# fzf
+fzf --fish | source
+
 set PATH "$PATH:$HOME/.cargo/bin"
 
 clear && pokeget random --hide-name >/tmp/pkmn.txt && fastfetch -c $HOME/.config/fastfetch/config.jsonc && printf '\n'

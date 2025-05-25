@@ -50,6 +50,7 @@ end
 # Link tmux config
 if not test -f "$HOME/config./tmux/tmux.conf"
     echo "Linking tmux config to $HOME/config./tmux/tmux.conf..."
+    mkdir -p "$HOME/.config/tmux"
     ln -sf "$PWD/tmux/tmux.conf" "$HOME/config./tmux/tmux.conf"
 else
     echo "Tmux config already linked."

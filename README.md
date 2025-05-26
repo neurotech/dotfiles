@@ -7,7 +7,9 @@
 
 ### Change system font
 
-`sudo dpkg-reconfigure console-setup`
+```shell
+sudo dpkg-reconfigure console-setup
+```
 
 * Encoding: UTF-8
 * Character set: Guess optimal character set
@@ -15,7 +17,9 @@
 
 ### Configure static IP:
 
-`sudo nano /etc/netplan/50-cloud-init.yaml`
+```shell
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
 
 #### WiFi:
 
@@ -100,7 +104,10 @@ newgrp docker
 
 ### Homebrew packages
 
-`brew install uv node pnpm fish btop eza bat tldr rust fastfetch tmux tpm entr fzf`
+
+```shell
+brew install uv node pnpm fish btop eza bat tldr rust fastfetch tmux tpm entr fzf
+```
 
 Add the following to the end of `~/.bashrc`:
 

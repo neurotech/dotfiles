@@ -88,11 +88,11 @@ sudo reboot now
 
 ### Homebrew
 
-Install Homebrew as per: https://brew.sh/
+Install Homebrew: https://brew.sh/
 
 ### Docker
 
-Install Docker as per: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+Install Docker: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 Create a `docker` group (so as to not need to `sudo` before each call to `docker`):
 
@@ -123,11 +123,7 @@ cargo install pokeget
 
 Run `tmux` and then hit `` + I` to install the `tpm` plugins.
 
-### Pi-hole
-
-TODO
-
-### GitHub
+### GitHub SSH Key
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux
 
@@ -138,3 +134,16 @@ git clone https://github.com/neurotech/dotfiles
 cd dotfiles
 ./install.sh
 ```
+
+### Jellyfin (Docker)
+
+```shell
+docker pull jellyfin/jellyfin
+
+cd $HOME/dotfiles/jellyfin
+docker compose up -d
+```
+
+### Pi-hole
+
+TODO

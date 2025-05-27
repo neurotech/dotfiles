@@ -55,3 +55,8 @@ if not test -f "$HOME/.config/tmux/tmux.conf"
 else
     echo "Tmux config already linked."
 end
+
+# Make jellyfin directories
+mkdir -p /opt/jellyfin/config
+mkdir -p /opt/jellyfin/cache
+mkdir -p /opt/jellyfin/media

@@ -22,4 +22,7 @@ fzf --fish | source
 
 set PATH "$PATH:$HOME/.cargo/bin"
 
+export UID=$(id -u)
+export GID=$(id -g)
+
 clear && pokeget random --hide-name >/tmp/pkmn.txt && fastfetch -c $HOME/.config/fastfetch/config.jsonc && printf '\n'

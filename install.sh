@@ -58,4 +58,4 @@ end
 
 # Make jellyfin directories
 sudo mkdir -p /opt/jellyfin/config /opt/jellyfin/cache /opt/jellyfin/media
-sudo chown -R root:jellyfin /opt/jellyfin/config /opt/jellyfin/cache /opt/jellyfin/media
+sudo chown -R $USER:$USER /opt/jellyfin

@@ -140,6 +140,11 @@ cd dotfiles
 Note: Jellyfin's default port is 8096
 
 ```shell
+sudo groupadd jellyfin
+sudo usermod -a -G jellyfin root
+sudo usermod -a -G jellyfin $USER
+newgrp jellyfin
+
 docker pull jellyfin/jellyfin
 
 cd $HOME/dotfiles/jellyfin

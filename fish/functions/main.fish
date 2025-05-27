@@ -13,7 +13,7 @@ end
 function music
     cd /opt/jellyfin/media/music
 
-    sudo $(which yt-dlp) \
+    yt-dlp \
         --windows-filenames \
         -x \
         --audio-format mp3 \
@@ -32,7 +32,7 @@ end
 function video
     cd /opt/jellyfin/media/youtube
 
-    sudo $(which yt-dlp) $argv
+    yt-dlp $argv
 
     cd -
 end

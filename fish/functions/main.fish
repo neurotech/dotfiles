@@ -32,7 +32,12 @@ end
 function video
     cd /opt/jellyfin/media/youtube
 
-    yt-dlp $argv
+    yt-dlp \
+        -f bestvideo+bestaudio \
+        --embed-thumbnail \
+        --embed-metadata \
+        --merge-output-format mp4 \
+        $argv
 
     cd -
 end

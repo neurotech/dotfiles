@@ -4,10 +4,10 @@ services:
     container_name: jellyfin
     network_mode: 'host'
     volumes:
-      - /opt/jellyfish/config:/config
-      - /opt/jellyfish/cache:/cache
+      - /opt/jellyfin/config:/config
+      - /opt/jellyfin/cache:/cache
       - type: bind
-        source: /opt/jellyfish/media
+        source: /opt/jellyfin/media
         target: /media
         read_only: true
     restart: 'unless-stopped'

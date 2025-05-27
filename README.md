@@ -137,6 +137,8 @@ cd dotfiles
 
 ### Jellyfin (Docker)
 
+Note: Jellyfin's default port is 8096
+
 ```shell
 docker pull jellyfin/jellyfin
 

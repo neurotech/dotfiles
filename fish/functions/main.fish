@@ -11,9 +11,9 @@ function lightsoff
 end
 
 function music
-    cd /opt/jellyfin/media/youtube
+    cd /opt/jellyfin/media/music
 
-    yt-dlp \
+    sudo $(which yt-dlp) \
         --windows-filenames \
         -x \
         --audio-format mp3 \
@@ -25,6 +25,14 @@ function music
         --exec-before-download "rm %(thumbnails.-1.filepath)q" \
         --exec-before-download "mv _%(thumbnails.-1.filepath)q %(thumbnails.-1.filepath)q" \
         $argv
+
+    cd -
+end
+
+function video
+    cd /opt/jellyfin/media/youtube
+
+    sudo $(which yt-dlp) $argv
 
     cd -
 end

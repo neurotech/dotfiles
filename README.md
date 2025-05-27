@@ -106,7 +106,7 @@ newgrp docker
 
 
 ```shell
-brew install uv node pnpm fish btop eza bat tldr rust fastfetch tmux tpm entr fzf
+brew install uv node pnpm fish btop eza bat tldr rust fastfetch tmux tpm entr fzf yt-dlp ffmpeg
 ```
 
 Add the following to the end of `~/.bashrc`:

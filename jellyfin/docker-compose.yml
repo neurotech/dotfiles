@@ -10,7 +10,7 @@ services:
       - type: bind
         source: /opt/jellyfin/media
         target: /media
-        read_only: true
+        read_only: false
     restart: 'unless-stopped'
     extra_hosts:
       - 'host.docker.internal:host-gateway'

@@ -57,5 +57,5 @@ else
 end
 
 # Make jellyfin directories
-sudo mkdir -p /opt/jellyfin/config /opt/jellyfin/cache /opt/jellyfin/media
+sudo mkdir -p /opt/jellyfin/config /opt/jellyfin/cache /opt/jellyfin/media/music /opt/jellyfin/media/youtube
 sudo chown -R $USER:$USER /opt/jellyfin

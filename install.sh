@@ -56,6 +56,5 @@ else
     echo "Tmux config already linked."
 end
 
-# Make jellyfin directories
-sudo mkdir -p /opt/jellyfin/config /opt/jellyfin/cache /opt/jellyfin/media/music /opt/jellyfin/media/youtube
-sudo chown -R $USER:$USER /opt/jellyfin
+# Make share directories
+mkdir -p $MUSIC_SHARE_PATH $VIDEO_SHARE_PATH

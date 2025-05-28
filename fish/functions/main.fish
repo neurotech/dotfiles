@@ -11,7 +11,7 @@ function lightsoff
 end
 
 function music
-    cd /opt/jellyfin/media/music
+    cd $MUSIC_SHARE_PATH
 
     yt-dlp \
         --windows-filenames \
@@ -30,7 +30,7 @@ function music
 end
 
 function video
-    cd /opt/jellyfin/media/youtube
+    cd $VIDEO_SHARE_PATH
 
     yt-dlp \
         -f bestvideo+bestaudio \

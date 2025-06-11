@@ -73,7 +73,7 @@ sudo dpkg-reconfigure tzdata
 ```shell
 sudo apt update
 sudo apt upgrade
-sudo apt install update-motd brightnessctl
+sudo apt install update-motd brightnessctl samba
 ```
 
 ### Laptop Display Brightness
@@ -123,9 +123,43 @@ cargo install pokeget
 
 Run `tmux` and then hit `` + I` to install the `tpm` plugins.
 
-### GitHub SSH Key
+### GitHub SSH Key & Git Config
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux
+
+```shell
+git config --global init.defaultBranch main
+```
+
+### Samba
+
+```shell
+mkdir -p ~/share
+sudo nano /etc/samba/smb.conf
+```
+
+Add the block:
+
+```
+[sambashare]
+    comment = Samba
+    path = /home/YOUR_USERNAME/share
+    read only = no
+    browsable = yes
+```
+
+Restart Samba and allow Samba traffic:
+
+```shell
+sudo service smbd restart
+sudo ufw allow samba
+```
+
+Add Samba password:
+
+```shell
+sudo smbpasswd -a YOUR_USERNAME
+```
 
 ### dotfiles
 

@@ -2,7 +2,7 @@
 set fish_greeting ""
 
 # Setup brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew shellenv
 
 # Clear line on Ctrl+c
 bind --preset \cC cancel-commandline

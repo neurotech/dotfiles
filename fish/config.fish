@@ -20,12 +20,12 @@ end
 # fzf
 fzf --fish | source
 
-set -gx PATH $PATH $HOME /.cargo/bin
+set -gx PATH $HOME/.cargo/bin $PATH
 
 # pnpm
-set -gx PNPM_HOME $HOME /.local/share/pnpm
+set -gx PNPM_HOME $HOME/.local/share/pnpm
 if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH $PNPM_HOME $PATH
 end
 
 export MUSIC_SHARE_PATH="$HOME/share/music"

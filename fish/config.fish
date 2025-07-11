@@ -1,7 +1,7 @@
 # Disable the fish greeting message
 set -U fish_greeting
 
-# Setup brew
+# Setup Homebrew
 eval $(brew shellenv)
 
 # Clear line on Ctrl+c

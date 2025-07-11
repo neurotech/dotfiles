@@ -1,5 +1,5 @@
 # Disable the fish greeting message
-set fish_greeting ""
+set -U fish_greeting
 
 # Setup brew
 brew shellenv
@@ -20,10 +20,10 @@ end
 # fzf
 fzf --fish | source
 
-set PATH "$PATH:$HOME/.cargo/bin"
+set -gx PATH $PATH $HOME /.cargo/bin
 
 # pnpm
-set -gx PNPM_HOME "$HOME/.local/share/pnpm"
+set -gx PNPM_HOME $HOME /.local/share/pnpm
 if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end

@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 touch $HOME/.hushlogin
 
 # Link fish config

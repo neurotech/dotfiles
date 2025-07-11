@@ -1,5 +1,3 @@
-#!/home/linuxbrew/.linuxbrew/bin/fish
-
 touch $HOME/.hushlogin
 
 # Link fish config

@@ -32,6 +32,12 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH $PATH $PNPM_HOME
 end
 
+# go
+set -gx GO_HOME $HOME/go/bin
+if not string match -q -- $GO_HOME $PATH
+    set -gx PATH $PATH $GO_HOME
+end
+
 export MUSIC_SHARE_PATH="$HOME/share/music"
 export VIDEO_SHARE_PATH="$HOME/share/video"
 

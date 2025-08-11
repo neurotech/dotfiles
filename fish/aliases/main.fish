@@ -5,8 +5,12 @@ alias dotfiles="cd $HOME/dotfiles/ && git pull && ./install.sh && reload && cd -
 
 # homebrew
 alias bu="brew update && brew upgrade"
+alias bc="brew cleanup"
 
 # tmux
 alias tn="tmux new-session -s"
 alias tl="tmux list-sessions"
 alias ta="tmux attach-session"
+
+# pnpm
+alias p = pnpm

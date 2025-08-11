@@ -21,9 +21,14 @@ end
 fzf --fish | source
 
 # cargo
-set -gx CARGO_HOME $HOME/.cargo/bin
-if not string match -q -- $CARGO_HOME $PATH
-    set -gx PATH $PATH $CARGO_HOME
+set -gx CARGO_HOME1 $HOME/.cargo/bin
+if not string match -q -- $CARGO_HOME1 $PATH
+    set -gx PATH $PATH $CARGO_HOME1
+end
+
+set -gx CARGO_HOME2 $HOME/.cargo/bin/bin
+if not string match -q -- $CARGO_HOME2 $PATH
+    set -gx PATH $PATH $CARGO_HOME2
 end
 
 # pnpm

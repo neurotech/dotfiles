@@ -13,4 +13,4 @@ alias tl="tmux list-sessions"
 alias ta="tmux attach-session"
 
 # pnpm
-alias p = pnpm
+alias p="pnpm"

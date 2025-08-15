@@ -31,6 +31,12 @@ if not string match -q -- $CARGO_HOME2 $PATH
     set -gx PATH $PATH $CARGO_HOME2
 end
 
+# rustup
+set -gx RUSTUP_HOME $(brew --prefix rustup)/bin
+if not string match -q -- $RUSTUP_HOME $PATH
+    set -gx PATH $PATH $RUSTUP_HOME
+end
+
 # pnpm
 set -gx PNPM_HOME $HOME/.local/share/pnpm
 if not string match -q -- $PNPM_HOME $PATH

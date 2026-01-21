@@ -1,0 +1,16 @@
+# https://ghostty.org/docs/config
+# Ctrl + Shift + , to reload config
+
+theme = Mathias
+
+font-family = Lilex Nerd Font Medium
+
+window-padding-x = 20
+window-padding-y = 20
+window-padding-balance = true
+
+maximize = true
+
+cursor-style = bar
+
+link-url = true

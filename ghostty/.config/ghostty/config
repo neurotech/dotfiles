@@ -14,3 +14,5 @@ maximize = true
 cursor-style = bar
 
 link-url = true
+
+keybind = F11=toggle_fullscreen

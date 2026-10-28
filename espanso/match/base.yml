@@ -1,0 +1,61 @@
+# https://espanso.org/docs/
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  # Scripts
+  - trigger: ":test"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "tsx $HOME/dotfiles/scripts/pkmn.ts"
+          shell: zsh
+
+  - trigger: ":linear"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "tsx $HOME/dotfiles/scripts/linear/linear.ts"
+          shell: zsh
+
+  # Date & Time
+  - trigger: ";date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d %B %Y"
+
+  - trigger: ";time"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%I:%M %p"
+
+  # Email Addresses
+  - trigger: ";ntem"
+    replace: "neurotech@gmail.com"
+  - trigger: ";hdem"
+    replace: "tim.douglas@houseofdoge.com"
+  - trigger: ";tdem"
+    replace: "hello@timdouglas.co"
+
+  # Symbols
+  - trigger: ";tm"
+    replace: "™"
+  - trigger: ";arrow"
+    replace: "→"
+
+  # Miscellaneous
+  - trigger: ";house"
+    replace: "House is located at the end of the private road, through the white gates."
+  - trigger: ";doge"
+    replace: "Ð"
+  - trigger: "pokemon"
+    replace: "Pokémon"
